@@ -1,0 +1,1 @@
+int main() { int x = 5; // Correct: No need to delete.  x will be automatically cleaned up when main() finishes. int *ptr = new int(5); //Allocate memory from the heap.  *ptr = 5; // Use the dynamically allocated memory. delete ptr; // Release the memory from the heap. ptr = nullptr; // Good practice: Set ptr to null after deleting return 0; }
